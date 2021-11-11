@@ -1,0 +1,376 @@
+/*fobts*/
+@font-face{
+	src:url(fonts/lato/Lato-Regular.ttf);
+	font-family: Lato-Regular; 
+}
+@font-face{
+	src:url(fonts/lato/Lato-Bold.ttf);
+	font-family: Lato-Bold; 
+}
+/*common css start*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Lato-Regular;    
+	font-size: 16px;
+	font-weight: 400;
+	color: #999999;
+}
+/*common css end*/
+/*header start*/
+header{
+	/*border: 1px solid black;*/
+	padding: 20px 0;
+}
+.wrapper{
+	overflow: hidden;
+	margin: 0 auto;
+	width: 80%;
+	/*border: 1px solid red;*/
+}
+.logo{
+	width: 10%;
+	/*border: 1px solid red;*/
+	float: left;
+}
+.logo a{}
+.logo a img{
+	width: 100%;
+}
+.menu{
+	margin-top: 2px;
+	width: 60%;
+	/*border: 1px solid red;*/
+	float: right;
+}
+.menu ul{
+	margin: 0;
+	float: right;
+}
+.menu ul li{
+	list-style: none;
+	float: left;
+}
+.menu ul li a{
+	margin: 0 15px;
+	padding: 3px 0;
+	display: inline-block;
+	color: #2d3950;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 1px solid transparent;
+}
+.menu ul li:last-child a{
+	margin-right: 0;
+}
+.menu ul li a:hover{
+	/*border-bottom: 1px solid #2d3950;*/
+	color: #15a4fa;
+}
+/*header end*/
+/*section start*/
+.banner{
+	background-image: linear-gradient(rgba(0,0,0,0.01), #2d374c), url(images/banner.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	/*min-height: 80vh;*/
+}
+.banner_content{
+	margin-top: 150px;
+	margin-bottom: 150px;  
+	text-align: center;
+}
+.banner_content h1{
+	margin: 0;
+	font-family: Lato-Bold;
+	font-size: 90px;
+	font-weight: 700;
+	color: white;
+}
+.banner_content p{
+    margin-top: 15px; 
+    font-family: Lato-Regular;
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+
+}
+.button{
+	margin-top: 50px; 
+	padding: 20px 20px;
+	font-family: Lato-Regular;
+	font-size: 18px;
+	font-weight: 400;
+	color: white;
+	background: none; 
+	border: 1px solid #15a4fa;
+	text-align: center;
+	
+}
+/*section end*/
+/*design section start*/
+.design{
+	background-color: #f6f9f9;
+}
+.d_wrapper{
+	text-align: center;
+}
+.d_h1{
+	margin-top: 70px;
+	margin-bottom: 0;
+	font-family: Lato-Regular; 
+	font-size: 40px;
+	font-weight: 400;
+	color: #2d3950; 
+}
+.d_p{
+	margin-top: 0;
+	margin-bottom: 100px;
+	padding-top: 32px;
+	font-size: 20px;
+	line-height: 25px;
+}
+
+/*single item start*/
+/* blog start  */
+.blog{
+    overflow: hidden;
+    padding:60px 0;
+}
+.single-b{
+    width:30%;
+   margin-right:5%;
+   float: left;
+   text-align: center;
+   transition: .4s;
+}
+ .single-b:last-child{
+    margin-right: 0;
+}
+.single-b:hover{
+    transform: scale(1.1);
+}
+
+.single-b h2{
+   margin: 22px 0;
+   font-size: 22px;
+}
+.single-b p{
+    line-height: 24px;
+}
+/* blog end  */
+/*design section end*/
+/*pro start*/
+.pro{
+	padding: 65px 0;
+	background-color: #f6f9f9;
+	overflow: hidden;
+}
+.pro_wrapper{
+	text-align: center;
+}
+.pro_h1{
+	margin-top: 70px;
+	margin-bottom: 0;
+	font-family: Lato-Regular; 
+	font-size: 41px;
+	font-weight: 400;
+	color: #2d3950;
+}
+.pro_p{
+	/*margin-top: 25px;*/
+	margin-bottom: 45px;
+	padding-top: 7px;
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.s_showcase{
+	width: 31.3%;
+    float: left;
+    margin-right: 3%;
+    margin-top: 30px;
+ 
+ }
+.p_b{
+    margin-right: 0;   
+}
+.showcase_img{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+    transition: .3s;
+	/*border: 1px solid red;*/
+	
+}
+.showcase_img img{
+	width: 100%;
+	height: auto;
+}
+.s_showcase:hover{
+   transform: scale(1.02);
+}
+.hover-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #2d3950;
+   opacity: 0;
+ }
+.o_2{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #87cce6;
+	opacity: 0;
+	transition: .4s;
+}
+.o_2:hover{
+	opacity: .7;
+}
+.s_showcase:hover .hover-icon{
+    opacity: 1;
+ }
+ .hover-icon  i.fas{
+    font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+/*pro end*/
+/* form start */
+.form{
+    background-image: linear-gradient(rgba(0,0,0,0.5), #424c61), url(images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(top center);
+    width: 100%;
+    min-height:600px ;
+    padding: 60px 0;
+}
+.wrapper3{}
+
+.m-form{
+    text-align: center;
+}
+.m-form h3{
+	margin-bottom: 5px; 
+    color: #FFFFFf;
+    font-size: 41px;
+}
+.m-form p{
+    color: #999999;
+    font-size: 15px;
+    margin: 15px 0;
+}
+.form-part{}
+
+.inp{
+    height:60px;
+    width: 500px;
+    background:none ;
+    border: 1px solid rgb(145, 142, 142);
+    margin: 20px 0;
+    color: #999999;
+}
+.inpp{
+    margin-top: 20px;
+    height:150px;
+    width: 500px;
+    background:none ;
+    border: 1px solid rgb(145, 142, 142);
+}
+
+.form-part span{
+    color: #999999;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.btn{
+    height:50px ;
+    width: 145px;
+    background:none ;
+    margin: 20px 0 20px 175px;
+    border: 1px solid #15A4FA;
+    color: #999999;
+    transition: .4s;
+}
+.btn:hover{
+    background-color: #15A4FA;
+    color: #FFFFFf;
+}
+
+/* form end */
+/*footer section start*/
+footer{
+	background-color: #f0f0f0;
+	/*border: 1px solid red;*/
+	padding: 10px 0; 
+}
+.footer_menu{
+	width: 35%;
+	/*border: 1px solid red;*/
+	float: left;
+}
+.footer_menu ul{
+	padding-left: 0;
+	float: left;
+}
+.footer_menu ul li{
+	list-style: none;
+	float: left;
+}
+.footer_menu ul li a{
+	margin-top: 4px;
+	padding-left: 0;
+	display: inline-block;
+	color: #999999;
+	text-decoration: none;
+	/*border: 1px solid red;*/
+}
+.icons{
+	width: 30%;
+	/*border: 1px solid red;*/
+	float: right;
+	transition: .7s;
+
+}
+.icons ul{
+	float: right;
+}
+.icons ul li{
+	list-style: none;
+	float: left;
+}
+.icons ul li a{
+	padding: 0 10px;
+	font-size: 15px;
+	display: inline-block;
+	color:  #15a4fa;
+	text-decoration: none;
+}
+.icons ul li:nth-child(4) a {
+	padding-right: 0;
+}
+
+.icons ul li a i{
+	font-size: 30px;
+	color: #15a4fa; 
+}
+.icons ul li a i:hover{
+	transform: scale(1.1);
+}
+
+
+
+/*footer section end*/
